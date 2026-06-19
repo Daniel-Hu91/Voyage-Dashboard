@@ -2,11 +2,11 @@ import os
 import requests
 import urllib3
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-API_KEY = os.getenv("ATOBVIAC_API_KEY")
 URL = "https://api.atobviac.com/v1/Distance"
 
 route_options = {
@@ -15,6 +15,11 @@ route_options = {
     "TC22 Ulsan → Botany Bay": ("Ulsan", "Botany Bay"),
     "TC11 Ulsan → Singapore": ("Ulsan", "Singapore"),
 }
+
+def get_api_key():
+    if "ATOBVIAC_API_KEY" in st.secrets:
+        return st.secrets["ATOBVIAC_API_KEY"]
+    return os.getenv("ATOBVIAC_API_KEY")
 
 def get_route_options():
     return route_options
@@ -35,12 +40,14 @@ def get_route_ports(route_name):
     return route_options[route_name]
 
 def get_distance(departure, arrival):
-    if not API_KEY:
+    api_key = get_api_key()
+
+    if not api_key:
         raise ValueError("ATOBVIAC_API_KEY is not set.")
 
     params = {
         "port": [departure, arrival],
-        "api_key": API_KEY
+        "api_key": api_key
     }
 
     response = requests.get(URL, params=params, verify=False, timeout=30)
