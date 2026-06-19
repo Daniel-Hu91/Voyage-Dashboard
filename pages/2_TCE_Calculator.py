@@ -38,9 +38,9 @@ PORT_OPTIONS = [
 
 # Fixed assumptions
 FIXED_ASSUMPTIONS = {
-    "ballast_speed": 13.0,
+    "ballast_speed": 12.5,
     "ballast_fuel_tpd": 17.0,
-    "laden_speed": 12.5,
+    "laden_speed": 13.0,
     "laden_fuel_tpd": 23.0,
     "port_days": 4.5,
     "load_port_fuel_tpd": 7.0,
