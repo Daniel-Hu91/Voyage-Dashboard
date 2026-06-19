@@ -18,8 +18,8 @@ def get_tonnage(ballast_port):
         return 38000.0
     return 35000.0
 
-st.set_page_config(page_title="TCE Calculator 2.0", layout="wide")
-st.title("TCE Calculator 2.0")
+st.set_page_config(page_title="TCE Calculator", layout="wide")
+st.title("TCE Calculator")
 
 st.write("This TCE Calculator lets you select a port opening in, a port ballasting to, and a port ladening to. You can also save calculations to make comparisons.")
 
