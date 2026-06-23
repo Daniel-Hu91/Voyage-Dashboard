@@ -6,7 +6,7 @@ ROUTE_FLAT_RATES = {
     ("Singapore", "Kwinana (Refinery)"): 10.33,
     ("Singapore", "Botany Bay"): 16.84,
     ("Ulsan", "Singapore"): 10.03,
-    ("Sikka", "Dar-es-Salaa"): 9.87
+    ("Sikka", "Dar-es-Salaam"): 9.87
 }
 
 def get_flat_rate(ballast_port, laden_port):
