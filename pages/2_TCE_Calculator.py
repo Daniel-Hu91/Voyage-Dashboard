@@ -315,20 +315,20 @@ else:
                     <div><strong>Ballast Port:</strong> {result['ballast_port']}</div>
                     <div><strong>Laden Port:</strong> {result['laden_port']}</div>
                     <div><strong>Sailing Days:</strong> {result['total_sailing_days']:,.2f}</div>
+                    <div><strong>Ballast ECA Days:</strong> {result['ballast_eca_days']:,.2f}</div>
+                    <div><strong>Laden ECA Days:</strong> {result['laden_eca_days']:,.2f}</div>
                     <div><strong>Total Days:</strong> {result['total_days']:,.2f}</div>
                     <div><strong>Revenue:</strong> ${result['revenue']:,.2f}</div>
                     <div><strong>Net Income:</strong> ${result['net_income']:,.2f}</div>
-                    <div><strong>Total Expenses:</strong> ${result['total_expenses']:,.2f}</div>
                     <div><strong>Bunker Costs:</strong> ${result['bunker_costs']:,.2f}</div>
                     <div><strong>Port Costs:</strong> ${result['port_costs']:,.2f}</div>
-                    <div><strong>Ballast ECA Days:</strong> {result['ballast_eca_days']:,.2f}</div>
-                    <div><strong>Laden ECA Days:</strong> {result['laden_eca_days']:,.2f}</div>
                     <div><strong>Ballast ECA Premium:</strong> ${result['ballast_eca_premium']:,.2f}</div>
                     <div><strong>Laden ECA Premium:</strong> ${result['laden_eca_premium']:,.2f}</div>
                     <div><strong>ECA Premium:</strong> ${result['eca_premium']:,.2f}</div>
                     <div><strong>Ballast Emissions Cost:</strong> ${result['ballast_emissions_cost']:,.2f}</div>
                     <div><strong>Laden Emissions Cost:</strong> ${result['laden_emissions_cost']:,.2f}</div>
                     <div><strong>Emissions Cost:</strong> ${result['emissions_cost']:,.2f}</div>
+                    <div><strong>Total Expenses:</strong> ${result['total_expenses']:,.2f}</div>
                     <div><strong>TCE:</strong> ${result['tce']:,.2f}/day</div>
                 </div>
                 """,
