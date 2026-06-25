@@ -16,6 +16,11 @@ st.set_page_config(page_title="Lumpsum Calculator", layout="wide")
 st.title("Lumpsum Calculator")
 
 st.write("This calculator lets you evaluate a single voyage on a lumpsum revenue basis and save calculations for comparison.")
+st.write("Link to check bunker prices: https://minerva-fuel-prices.prd.mercuria.systems/")
+st.write("Link to check flat rates: https://www.worldscale.co.uk/")
+st.write("Link to check port costs: https://www.portlog.com/")
+st.write("Link to check port distances: https://ptp.atobviac.com/")
+
 
 PORT_OPTIONS = [
     "Botany Bay",
