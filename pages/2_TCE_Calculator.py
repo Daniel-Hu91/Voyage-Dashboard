@@ -311,7 +311,7 @@ else:
         with col:
             wait_days_style = ""
             if result.get("wait_days", 0) > 5:
-                wait_days_style = "color:red; font-weight:bold;"
+                wait_days_style = "color:yellow; font-weight:bold;"
             st.markdown(
                 f"""
                 <div style="padding:12px; border:1px solid #ddd; border-radius:8px; margin-bottom:12px;">
