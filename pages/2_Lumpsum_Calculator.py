@@ -324,3 +324,7 @@ else:
                 """,
                 unsafe_allow_html=True
             )
+
+            if st.button("Delete This Result", key=f"delete_saved_tce_{idx}"):
+                st.session_state["saved_tce_results"].pop(idx)
+                st.rerun()
