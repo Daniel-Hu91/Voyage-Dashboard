@@ -23,6 +23,9 @@ st.title("TCE Calculator")
 
 st.write("This TCE Calculator lets you select a port opening in, a port ballasting to, and a port ladening to. You can also save calculations to make comparisons.")
 st.write("Link to check bunker prices: https://minerva-fuel-prices.prd.mercuria.systems/")
+st.write("Link to check flat rates: https://www.worldscale.co.uk/")
+st.write("Link to check port costs: https://www.portlog.com/")
+st.write("Link to check port distances: https://ptp.atobviac.com/")
 
 PORT_OPTIONS = [
     "Botany Bay",
