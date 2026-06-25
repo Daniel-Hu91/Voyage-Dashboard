@@ -309,6 +309,9 @@ else:
     for idx, result in enumerate(saved_results):
         col = result_cols[idx % len(result_cols)]
         with col:
+            wait_days_style = ""
+            if result.get("wait_days", 0) > 5:
+                wait_days_style = "color:red; font-weight:bold; background-color:#ffe6e6; padding:4px; border-radius:4px;"
             st.markdown(
                 f"""
                 <div style="padding:12px; border:1px solid #ddd; border-radius:8px; margin-bottom:12px;">
@@ -318,7 +321,7 @@ else:
                     <div><strong>Sailing Days:</strong> {result['total_sailing_days']:,.2f}</div>
                     <div><strong>Ballast ECA Days:</strong> {result['ballast_eca_days']:,.2f}</div>
                     <div><strong>Laden ECA Days:</strong> {result['laden_eca_days']:,.2f}</div>
-                    <div><strong>Wait Days:</strong> {result['wait_days']:,.2f}</div>
+                    <div style="{wait_days_style}"><strong>Wait Days:</strong> {result['wait_days']:,.2f}</div>
                     <div><strong>Total Days:</strong> {result['total_days']:,.2f}</div>
                     <div><strong>Revenue:</strong> ${result['revenue']:,.2f}</div>
                     <div><strong>Net Income:</strong> ${result['net_income']:,.2f}</div>
