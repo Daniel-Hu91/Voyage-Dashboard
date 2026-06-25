@@ -321,7 +321,7 @@ else:
                     <div>Sailing Days: {result['total_sailing_days']:,.2f}</div>
                     <div>Ballast ECA Days: {result['ballast_eca_days']:,.2f}</div>
                     <div>Laden ECA Days: {result['laden_eca_days']:,.2f}</div>
-                    <div style="{wait_days_style}"><strong>Wait Days:</strong> {result['wait_days']:,.2f}</div>
+                    <div style="{wait_days_style}">Wait Days: {result['wait_days']:,.2f}</div>
                     <div><strong><u>Total Days:</u></strong> {result['total_days']:,.2f}</div>
                     <div>Revenue: ${result['revenue']:,.2f}</div>
                     <div><strong><u>Net Income:</u></strong> ${result['net_income']:,.2f}</div>
