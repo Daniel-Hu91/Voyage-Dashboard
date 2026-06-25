@@ -286,6 +286,7 @@ if st.button("Calculate TCE"):
             "ballast_emissions_cost": ballast_emissions_cost,
             "laden_emissions_cost": laden_emissions_cost,
             "emissions_cost": emissions_cost,
+            "wait_days": wait_days
         }
 
         st.session_state["saved_tce_results"].append(result)
@@ -317,6 +318,7 @@ else:
                     <div><strong>Sailing Days:</strong> {result['total_sailing_days']:,.2f}</div>
                     <div><strong>Ballast ECA Days:</strong> {result['ballast_eca_days']:,.2f}</div>
                     <div><strong>Laden ECA Days:</strong> {result['laden_eca_days']:,.2f}</div>
+                    <div><strong>Wait Days:</strong> {result['wait_days']:,.2f}</div>
                     <div><strong>Total Days:</strong> {result['total_days']:,.2f}</div>
                     <div><strong>Revenue:</strong> ${result['revenue']:,.2f}</div>
                     <div><strong>Net Income:</strong> ${result['net_income']:,.2f}</div>
