@@ -32,6 +32,7 @@ PORT_OPTIONS = [
     "Dar-es-Salaam",
     "Durban",
     "Houston",
+    "Jubail - Commercial Port"
     "Kwinana (Refinery)",
     "Luanda",
     "New York",
