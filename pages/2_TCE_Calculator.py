@@ -322,9 +322,9 @@ else:
                     <div>Ballast ECA Days: {result['ballast_eca_days']:,.2f}</div>
                     <div>Laden ECA Days: {result['laden_eca_days']:,.2f}</div>
                     <div style="{wait_days_style}">Wait Days: {result['wait_days']:,.2f}</div>
-                    <div><strong><u>Total Days:</u></strong> {result['total_days']:,.2f}</div>
+                    <div><strong><u>Total Days: {result['total_days']:,.2f}</u></strong></div>
                     <div>Revenue: ${result['revenue']:,.2f}</div>
-                    <div><strong><u>Net Income:</u></strong> ${result['net_income']:,.2f}</div>
+                    <div><strong><u>Net Income: ${result['net_income']:,.2f}</u></strong></div>
                     <div>Bunker Costs: ${result['bunker_costs']:,.2f}</div>
                     <div>Port Costs: ${result['port_costs']:,.2f}</div>
                     <div>Ballast ECA Premium: ${result['ballast_eca_premium']:,.2f}</div>
@@ -333,8 +333,8 @@ else:
                     <div>Ballast Emissions Cost: ${result['ballast_emissions_cost']:,.2f}</div>
                     <div>Laden Emissions Cost: ${result['laden_emissions_cost']:,.2f}</div>
                     <div>Emissions Cost: ${result['emissions_cost']:,.2f}</div>
-                    <div><strong><u>Total Expenses:</u></strong> ${result['total_expenses']:,.2f}</div>
-                    <div><strong><u>TCE:</u></strong> ${result['tce']:,.2f}/day</div>
+                    <div><strong><u>Total Expenses: ${result['total_expenses']:,.2f}</u></strong></div>
+                    <div><strong><u>TCE: ${result['tce']:,.2f}/day</u></strong></div>
                 </div>
                 """,
                 unsafe_allow_html=True
