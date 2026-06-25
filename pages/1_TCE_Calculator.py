@@ -33,6 +33,7 @@ PORT_OPTIONS = [
     "Durban",
     "Houston",
     "Kwinana (Refinery)",
+    "Luanda",
     "New York",
     "Rotterdam",
     "Singapore",
